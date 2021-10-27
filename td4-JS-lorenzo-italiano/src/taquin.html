@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>taquin JavaScript</title>
+	<link href="img/icone.png" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/styles_taquin.css">
+	<script defer type="text/javascript" src="javascript/Instance.js"></script>
+	<script defer type="text/javascript" src="javascript/taquin.js"></script>
+	<script defer type="text/javascript" src="javascript/jeu.js"></script>
+</head>
+<body>
+	<div id="plateau">
+		<div id="titre"><p>Taquin JavaScript - TD4</p></div>
+		<div id="boutons">
+			<select id="themes">
+				<option selected value="nombres">Nombres</option>
+				<option value="oeildedieu">Oeil de Dieu</option>
+				<option value="turing">Alan Turing</option>
+				<option value="einstein">Albert Einstein</option>
+				<option value="fractale">Fractale</option>
+				<option value="mur">Mur de pierres</option>
+				<option value="buzz">Buzz Aldrin</option>
+				<option value="storm">Orage</option>
+				<option value="alpes">Alpes</option>
+				<option value="rose">Rose</option>
+				<option value="ciel">Ciel</option>
+			</select>
+			<input type="button" id="melanger" value="mélanger">
+			<input type="button" id="solution" value="solution">
+		</div>
+		<div id="jeu" class="afficher">
+			<div id="ligne0" class="ligne">
+				<img id="photo00" class="img_puzzle" src='img/nombres/nombres_0.jpg'>
+				<img id="photo01" class="img_puzzle" src='img/nombres/nombres_1.jpg'>
+				<img id="photo02" class="img_puzzle" src='img/nombres/nombres_2.jpg'>
+				<img id="photo03" class="img_puzzle" src='img/nombres/nombres_3.jpg'>
+			</div>
+			<div id="ligne1" class="ligne">
+				<img id="photo10" class="img_puzzle" src='img/nombres/nombres_4.jpg'>
+				<img id="photo11" class="img_puzzle" src='img/nombres/nombres_5.jpg'>
+				<img id="photo12" class="img_puzzle" src='img/nombres/nombres_6.jpg'>
+				<img id="photo13" class="img_puzzle" src='img/nombres/nombres_7.jpg'>
+			</div>
+			<div id="ligne2" class="ligne">
+				<img id="photo20" class="img_puzzle" src='img/nombres/nombres_8.jpg'>
+				<img id="photo21" class="img_puzzle" src='img/nombres/nombres_9.jpg'>
+				<img id="photo22" class="img_puzzle" src='img/nombres/nombres_10.jpg'>
+				<img id="photo23" class="img_puzzle" src='img/nombres/nombres_11.jpg'>
+			</div>
+			<div id="ligne3" class="ligne">
+				<img id="photo30" class="img_puzzle" src='img/nombres/nombres_12.jpg'>
+				<img id="photo31" class="img_puzzle" src='img/nombres/nombres_13.jpg'>
+				<img id="photo32" class="img_puzzle" src='img/nombres/nombres_14.jpg'>
+				<img id="photo33" class="img_puzzle" src='img/nombres/nombres_15.jpg'>
+			</div>
+		</div>
+		<div id="modele" class="cacher">
+			<img id="photo16" src='img/nombres/nombres_16.jpg'>
+		</div>
+		<div id="message"></div>
+		<div id="footer"><p>JavaScript 2020</p></div>
+	</div>
+</body>
+</html>

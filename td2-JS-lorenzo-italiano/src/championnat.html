@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>championnat</title>
+    <link rel="icon" href="img/icone.png" />
+    <link rel="stylesheet" type="text/css" href="css/championnat.css">
+    <script defer type="text/javascript" src="js/match.js"></script>
+    <script defer type="text/javascript" src="js/journee.js"></script>
+    <script defer type="text/javascript" src="js/championnat.js"></script>
+    <script defer type="text/javascript" src="js/scenario.js"></script>
+</head>
+<body>
+    <div>
+        <fieldset id="bloc-equipes">
+            <legend>équipes <img id="plus" src="img/plus.png"><img id="moins" src="img/moins.png"></legend>
+            <div id="equipes-engagees"></div>
+            <div id="liste-equipes">
+                <div>équipe 1 : <input type="text" id="nom-eq1"></div>
+                <div>équipe 2 : <input type="text" id="nom-eq2"></div>
+                <div>équipe 3 : <input type="text" id="nom-eq3"></div>
+                <div>équipe 4 : <input type="text" id="nom-eq4"></div>
+                <div>équipe 5 : <input type="text" id="nom-eq5"></div>
+                <div>équipe 6 : <input type="text" id="nom-eq6"></div>
+                <div>équipe 7 : <input type="text" id="nom-eq7"></div>
+                <div>équipe 8 : <input type="text" id="nom-eq8"></div>
+            </div>
+            <input type="button" id="lancer-championnat" value="lancer le championnat">
+        </fieldset>
+    </div>
+    <div>
+        <fieldset id="bloc-journee">
+            <legend id="num-journee">journée</legend>
+            <input type="button" id="journee-suivante" value="afficher la journée suivante">
+            <input type="button" id="jouer-journee" value="jouer la journée affichée">
+            <div id="match1"></div>
+            <div id="match2"></div>
+            <div id="match3"></div>
+            <div id="match4"></div>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset id="bloc-classement">
+            <legend>classement</legend>
+            <table>
+                <thead>
+                    <tr><th>Rang</th><th>Nom</th><th>Points</th><th>G</th><th>N</th><th>P</th><th>bp</th><th>bc</th><th>diff</th></tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/equipe.js"></script>
+<script type="text/javascript">
+    let eq1 = new Equipe("PSG");
+    eq1.nbMatchsGagnes = 6;
+    eq1.nbMatchsNuls = 3;
+    eq1.nbMatchsPerdus = 2;
+
+    let eq2 = new Equipe("MHSC");
+    eq2.nbMatchsGagnes = 8;
+    eq2.nbMatchsNuls = 3;
+    eq2.nbMatchsPerdus = 0;
+
+    let eq3 = new Equipe("OM");
+    eq3.nbMatchsGagnes = 2;
+    eq3.nbMatchsNuls = 4;
+    eq3.nbMatchsPerdus = 5;
+
+    let eq4 = new Equipe("TLC");
+    eq2.nbMatchsGagnes = 8;
+    eq2.nbMatchsNuls = 0;
+    eq2.nbMatchsPerdus = 3;
+
+    let eq5 = new Equipe("STE");
+    eq5.nbMatchsGagnes = 4;
+    eq5.nbMatchsNuls = 7;
+    eq5.nbMatchsPerdus = 1;
+
+    let eq6 = new Equipe("LOL");
+    eq6.nbMatchsGagnes = 6;
+    eq6.nbMatchsNuls = 2;
+    eq6.nbMatchsPerdus = 6;
+
+    let eq7 = new Equipe("MDR");
+    eq7.nbMatchsGagnes = 7;
+    eq7.nbMatchsNuls = 3;
+    eq7.nbMatchsPerdus = 2;
+
+    let eq8 = new Equipe("MILANFC");
+    eq8.nbMatchsGagnes = 5;
+    eq8.nbMatchsNuls = 6;
+    eq8.nbMatchsPerdus = 2;
+
+    //match1 = new Match(eq1,eq2)
+    //match2 = new Match(eq3,eq4)
+    //match3 = new Match(eq5,eq5)
+    //match4 = new Match(eq7,eq8)
+
+    //let tab = [match1,match2,match3,match4]
+    //let journee = new Journee(tab)
+</script>
